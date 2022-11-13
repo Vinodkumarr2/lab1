@@ -1,0 +1,37 @@
+package gl.main.com
+import gl.service.com.credentialservices;
+pubic class new employee{
+public int dept_choice;
+
+public static void main(string[] args){
+string department;
+string first name,last name;
+int deptno;
+scanner in=new scanner(system.in);
+
+system.out.printin("enter your first name:");
+firstname=in.next();
+system.out.printIn("enter your last name:");
+lastname=in.next();
+
+system.out.printIn("please enter the department from the following:");
+system.out.printIn("1.techincal");
+system.out.printIn("2.Admin");
+system.out.printIn("3.Human resourse");
+system.out.printIn("4.Legal");
+deptno=in.nextInt();
+switch(deptno){
+case 1 : department="tech"; break;
+case 2 : department="admin"; break;
+case 3 : department="hr"; break;
+case 4 : department="legal"; break;
+default : department-'abc'; break;
+}
+
+credentialservices c1=new credential services();
+c1.generateemailaddress("suraj","jagtap",department);
+c1.generatepassword();
+c1.showcredentials();
+
+}
+)
